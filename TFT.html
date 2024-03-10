@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="TFT.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="dropdown">
+        <button onclick="renderDropDown()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search.." class="myInput">
+          <a href="#Ahri" id="cost-4" data-cost="10">Ahri</a>
+          <a href="#Akali K/DA" id="cost-4" data-cost="10">Akali K/DA</a>
+          <a href="#Akali True Damage" id="cost-4" data-cost="10">Akali True Damage</a>
+          <a href="#Amumu" id="cost-3" data-cost="17">Amumu</a>
+          <a href="#Annie" id="cost-1" data-cost="22">Annie</a>
+          <a href="#Aphelios" id="cost-2" data-cost="20">Aphelios</a>
+          <a href="#Bard" id="cost-2" data-cost="20">Bard</a>
+          <a href="#Blitzcrank" id="cost-4" data-cost="10">Blitzcrank</a>
+          <a href="#Caitlyn" id="cost-4" data-cost="10">Caitlyn</a>
+          <a href="#Corki" id="cost-1" data-cost="22">Corki</a>
+          <a href="#Ekko" id="cost-3" data-cost="17">Ekko</a>
+          <a href="#Evelynn" id="cost-1" data-cost="22">Evelynn</a>
+          <a href="#Ezreal" id="cost-4" data-cost="10">Ezreal</a>
+          <a href="#Garen" id="cost-2" data-cost="20">Garen</a>
+          <a href="#Gnar" id="cost-2" data-cost="20">Gnar</a>
+          <a href="#Gragas" id="cost-2" data-cost="20">Gragas</a>
+          <a href="#Illaoi" id="cost-5" data-cost="9">Illaoi</a>
+          <a href="#Jax" id="cost-2" data-cost="20">Jax</a>
+          <a href="#Jhin" id="cost-5" data-cost="9">Jhin</a>
+          <a href="#Jinx" id="cost-1" data-cost="22">Jinx</a>
+          <a href="#KSante" id="cost-1" data-cost="22">KSante</a>
+          <a href="#Kaisa" id="cost-2" data-cost="20">Kaisa</a>
+          <a href="#Karthus" id="cost-4" data-cost="10">Karthus</a>
+          <a href="#Katarina" id="cost-2" data-cost="20">Katarina</a>
+          <a href="#Kayle" id="cost-2" data-cost="20">Kayle</a>
+          <a href="#Kayn" id="cost-5" data-cost="9">Kayn</a>
+          <a href="#Kennen" id="cost-1" data-cost="22">Kennen</a>
+          <a href="#Lillia" id="cost-1" data-cost="22">Lillia</a>
+          <a href="#Lucian" id="cost-5" data-cost="9">Lucian</a>
+          <a href="#Lulu" id="cost-3" data-cost="17">Lulu</a>
+          <a href="#Lux" id="cost-3" data-cost="17">Lux</a>
+          <a href="#Miss Fortune" id="cost-3" data-cost="17">Miss Fortune</a>
+          <a href="#Mordekaiser" id="cost-3" data-cost="17">Mordekaiser</a>
+          <a href="#Nami" id="cost-1" data-cost="22">Nami</a>
+          <a href="#Neeko" id="cost-3" data-cost="17">Neeko</a>
+          <a href="#Olaf" id="cost-1" data-cost="22">Olaf</a>
+          <a href="#Pantheon" id="cost-2" data-cost="20">Pantheon</a>
+          <a href="#Poppy" id="cost-4" data-cost="10">Poppy</a>
+          <a href="#Qiyana" id="cost-5" data-cost="9">Qiyana</a>
+          <a href="#Riven" id="cost-3" data-cost="17">Riven</a>
+          <a href="#Samira" id="cost-3" data-cost="17">Samira</a>
+          <a href="#Senna" id="cost-2" data-cost="20">Senna</a>
+          <a href="#Seraphine" id="cost-2" data-cost="20">Seraphine</a>
+          <a href="#Sett" id="cost-3" data-cost="17">Sett</a>
+          <a href="#Sona" id="cost-5" data-cost="9">Sona</a>
+          <a href="#Tahm Kench" id="cost-1" data-cost="22">Tahm Kench</a>
+          <a href="#Taric" id="cost-1" data-cost="22">Taric</a>
+          <a href="#Thresh" id="cost-4" data-cost="10">Thresh</a>
+          <a href="#Twisted Fate" id="cost-4" data-cost="10">Twisted Fate</a>
+          <a href="#Twitch" id="cost-2" data-cost="20">Twitch</a>
+          <a href="#Urgot" id="cost-3" data-cost="17">Urgot</a>
+          <a href="#Vex" id="cost-3" data-cost="17">Vex</a>
+          <a href="#Vi" id="cost-1" data-cost="22">Vi</a>
+          <a href="#Viego" id="cost-4" data-cost="10">Viego</a>
+          <a href="#Yasuo" id="cost-1" data-cost="22">Yasuo</a>
+          <a href="#Yone" id="cost-3" data-cost="17">Yone</a>
+          <a href="#Yorick" id="cost-5" data-cost="9">Yorick</a>
+          <a href="#Zac" id="cost-4" data-cost="10">Zac</a>
+          <a href="#Zed" id="cost-4" data-cost="10">Zed</a>
+          <a href="#Ziggs" id="cost-5" data-cost="9">Ziggs</a>
+        </div>
+      </div>
+      </div>
+      <div class="slider">
+        <input class="range-input" type="range" min="0" max="10" value="0" oninput="rangeValue.innerText = this.value">
+        <p id="rangeValue">0</p>
+      </div> 
+      <div>
+        <input class="usedunits" class="usedunits" type="text" placeholder="Units in play">
+      </div>
+      <script src="TFT.js"></script>
+</body>
+</html>
